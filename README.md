@@ -1,7 +1,5 @@
 # Welcome to monday-u Zoo!
 
-test
-
 ![](https://i.ytimg.com/vi/6_zFLsW7z2E/maxresdefault.jpg)
 
 ## Before we start!
