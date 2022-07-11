@@ -1,4 +1,5 @@
-import { Animal, AnimalType } from "./animal";
+import { PettableAnimal } from "animal-types/pettable-animal";
+import { Animal } from "./animal-types/animal";
 import { foodStorage } from "./food-storage";
 
 export class Caretaker {
@@ -25,22 +26,11 @@ export class Caretaker {
     }
   }
 
-  get name(): string {
-    return this._name;
+  public pet(animal: PettableAnimal): void {
+    console.log(`${this._name} pet ${animal.name}`);
   }
 
-  private getFavoriteFood(animal: Animal): string {
-    switch (animal.animalType) {
-      case AnimalType.CAT:
-        return "milk";
-      case AnimalType.DOG:
-        return "bonzo";
-      case AnimalType.SHARK:
-        return "fish";
-      case AnimalType.TIGER:
-        return "meat";
-      case AnimalType.RABBIT:
-        return "carrot";
-    }
+  get name(): string {
+    return this._name;
   }
 }
